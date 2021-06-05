@@ -7,10 +7,8 @@ import pandas as pd
 from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl import load_workbook
 
-auth = tweepy.OAuthHandler('UOrgCk8MVfbOgDDx6jHjFJF9M',
-                           'xaFpIT8Nb5eOXyzx7ifdbx3IfwnV6bBYNiB3wwgbpbV71RUUIV')
-auth.set_access_token('1271032967217868800-I30bAtDQgV3ricY4apzgZf9aP2vslW',
-                      'sSDiyX9KSO2GnABuchAn5zcZYFDOtTElgUKLw8ywv1nJx')
+auth = tweepy.OAuthHandler('') #add your OAuthHandler
+auth.set_access_token('') #add your access_token
 
 api = tweepy.API(auth)
 statusfile = 'tweets.txt'
